@@ -1,0 +1,156 @@
+{
+  "main": {
+    "id": "e9a7645eae4a0239",
+    "type": "split",
+    "children": [
+      {
+        "id": "3a0ed33a231a6a2d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac363dfc34290830",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4c5f56cf7eb22491",
+    "type": "split",
+    "children": [
+      {
+        "id": "b1854edebd6c13cd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "38fccf49acca173d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "37f91389254d6755",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b24f04df2ddf0d5e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "83a1fc61f6692fa3",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b220f3f7bbc2abd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "495fa8d53a4ef45e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b57c2aff80c28028",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "af16dfd4ce3a3693",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6e71cd5246ce5d6a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "ac363dfc34290830",
+  "lastOpenFiles": [
+    "Unity Shader入门精要.pdf",
+    "Algorithm/光照Lighting.md",
+    "2024-10-13.md",
+    "Unity/UnityCG.md",
+    "Algorithm/纹理Texture.md",
+    "Specular.png",
+    "Algorithm",
+    "Games101",
+    "Unity",
+    "创建链接.md",
+    "欢迎.md"
+  ]
+}
