@@ -4,8 +4,6 @@
 
 
 
-
-
 - 登录
 
 ```shell
@@ -154,6 +152,13 @@ ALTER TABLE 表名 RENAME TO 新表名;
 
 ![image.png](./assets/1668070097743-9f3452b1-6281-482e-9cee-3ea85a9960ea.webp)
 
+### 案例
+
+```mysql
+
+
+```
+
 ### DML
 
 #### 添加数据
@@ -205,6 +210,13 @@ DELETE FROM 表名 [WHERE 条件];
 **注意：**
 
 1. delete语句不能删除某一个字段的值（可以使用update为null）。
+
+### 案例
+
+```mysql
+
+
+```
 
 ### DQL
 
@@ -313,6 +325,13 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引,查询记录数;
 - 分页查询是数据库的方言，不同的数据库有不同的实现，MySQL中是limit
 - 如果查询的是第一页数据，起始索引可以省略，直接简写为limit10
 
+### 案例
+
+```mysql
+
+
+```
+
 ### DCL
 
 #### 创建用户
@@ -415,7 +434,109 @@ ALTER TABLE 表名 DROP FOREIGN KEY 外键名称;
 ALTER TABLE 表名 ADD CONSTRAINT 外键名称 FOREIGN KEY (外键字段) REFERENCES 主表名(主表字段名) ON UPDATE 行为 ON DELETE 行为;
 ```
 
+### 案例
+
+```mysql
+
+
+```
+
 ## 多表查询
+
+### 分类
+
+- 连接查询
+
+  - 内连接：查询A，B交集部分数据。
+  - 外连接
+    - 左外连接：查询**左表**所有数据，和两表交集部分数据。
+    - 右外连接：查询**右表**所有数据，和两表交集部分数据。
+  - 自连接：当前表与自身的连接查询，自连接必须使用表别名。
+- 子连接
+
+### 连接查询
+
+#### 内连接
+
+- 隐式内连接
+
+```mysql
+SELECT 字段列表 FROM 表1，表2 WHERE 条件...;
+```
+
+- 显示内连接
+
+```mysql
+SELECT 字段列表 FROM 表1 [INNER] JOIN 表2 ON 连接条件...;
+```
+
+#### 外连接
+
+- 左外连接
+
+```mysql
+SELECT 字段列表 FROM 表1 LEFT [OUTER] JOIN 表2 ON 条件...;
+```
+
+- 右外连接
+
+```mysql
+SELECT 字段列表 FROM 表1 RIGHT [OUTER] JOIN 表2 ON 条件...;
+```
+
+#### 自连接
+
+```mysql
+SELECT 字段列表 FROM 表A 别名A JOIN 表A 别名B ON 条件...;
+```
+
+#### 联合查询
+
+把多次查询的结合合并起来，形成一个新的查询结果集。
+
+```mysql
+SELECT 字段列表 FROM 表A ...
+UNION [ALL]
+SELECT 字段列表 FROM 表B ...;
+```
+
+多张表的列数必须保持一致，字段类型也要保持一致。
+
+`union all`会将全部的数据直接合并到一起，`union`会对合并后的数据去重。
+
+### 案例
+
+```mysql
+
+
+```
+
+### 子查询
+
+```mysql
+SELECT * FROM t1 WHERE column1 = (SELECT column1 FROM t2);
+```
+
+子查询的外部语句可以是`INSERT` / `UPDATE` / `DELETE` / `SELECT`的任何一个。
+
+- 根据子查询结果不同，分为：
+  - 标量子查询（子查询结果为单个值）
+    - 常用操作符：=，<>，>，>=，<，<=
+  - 列子查询（结果为一列）
+    - 常用操作符：IN，NOT IN，ANY，SOME，ALL
+  - 行子查询（结果为一行）
+    - 常用操作符：=，<>，IN，NOT IN
+  - 查子查询（结果为多列多行）
+    - 常用操作符：IN
+
+### 案例
+
+```mysql
+
+
+```
+
+
 
 
 
