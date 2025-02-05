@@ -268,9 +268,9 @@ SELECT DISTINCT 字段列表 FROM 表名;
 SELECT 字段列表 FROM 表名 WHERE 条件列表;
 ```
 
-![image.png](./assets/1668355409352-f8744c8a-6ee5-46fd-93f4-59a7b7828863.webp)
+<img src="./assets/1668355409352-f8744c8a-6ee5-46fd-93f4-59a7b7828863.webp" alt="image.png" style="zoom:67%;" />
 
-![image.png](./assets/1668355425767-664902f8-34d5-44a7-a765-092079882f1e.webp)
+<img src="./assets/1668355425767-664902f8-34d5-44a7-a765-092079882f1e.webp" alt="image.png" style="zoom:67%;" />
 
 #### 聚合查询
 
@@ -321,7 +321,7 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引,查询记录数;
 
 **注意：**
 
-- 起始索引从0开始，起始索引=（查询页码-1）*每页显示记录数
+- 起始索引从0开始，起始索引 =（查询页码 - 1）* 每页显示记录数
 - 分页查询是数据库的方言，不同的数据库有不同的实现，MySQL中是limit
 - 如果查询的是第一页数据，起始索引可以省略，直接简写为limit10
 
